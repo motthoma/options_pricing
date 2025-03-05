@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scripts_options"
+version = "0.1.0"
+description = "A Python module for building options."
+authors = [{ name = "T Motz", email = "thomasmotz@gmx.net" }]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]

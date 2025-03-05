@@ -1,0 +1,5 @@
+pyproject.toml
+scripts_options/scripts_options.egg-info/PKG-INFO
+scripts_options/scripts_options.egg-info/SOURCES.txt
+scripts_options/scripts_options.egg-info/dependency_links.txt
+scripts_options/scripts_options.egg-info/top_level.txt
