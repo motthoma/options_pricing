@@ -46,6 +46,6 @@ option_strategy.plot(stock_price_range=(0, 60), strategy_name="Bull Spread Calls
 
 Output:
 
-![Bull Spread Call Output](./bull_spread.png)
+![Bull Spread Call Output](./outputs/bull_spread.png)
 
 
