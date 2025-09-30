@@ -42,3 +42,10 @@ print(f"Option strategy result at stock price {stock_price}: {result}")
 
 # Plot the strategy over a range of stock prices
 option_strategy.plot(stock_price_range=(0, 60), strategy_name="Bull Spread Calls")
+```
+
+Output:
+
+![Bull Spread Call Output](bull_spread.png)
+
+

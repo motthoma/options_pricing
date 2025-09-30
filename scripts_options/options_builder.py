@@ -78,28 +78,23 @@ if __name__ == '__main__':
     builder = OptionBuilder()
 
     # Define the strikes and premiums
-    k_long_put = 50  # Strike price for long put
-    p_long_put = 5   # Premium for long put
+    k_long_call = 25  # Strike price for long call
+    p_long_call = 10   # Premium for long call
 
-    k_short_put = 55  # Strike price for short put
-    p_short_put = 3   # Premium for short put
-    
-    k_long_put_2 = 60  # Strike price for another long put
-    p_long_put_2 = 3   # Premium for the second long put
+    k_short_call = 30  # Strike price for short call
+    p_short_call = 8   # Premium for short call
 
-    # Build the option strategy (butterfly spread using puts)
+    # Build the option strategy
     option_strategy = (
-        builder.build_long_put(k_long_put, p_long_put)
-               .build_short_put(k_short_put, p_short_put)
-               .build_short_put(k_short_put, p_short_put)
-               .build_long_put(k_long_put_2, p_long_put_2)
+        builder.build_long_call(k_long_call, p_long_call)
+               .build_short_call(k_short_call, p_short_call)
                .build()
     )
 
     # Evaluate the strategy at a given stock price
-    stock_price = 0 
+    stock_price = 30
     result = option_strategy.evaluate(stock_price)
     print(f"Option strategy result at stock price {stock_price}: {result}")
-    
+
     # Plot the strategy over a range of stock prices
-    option_strategy.plot(stock_price_range=(0, 80), strategy_name="Butterfly_Puts")
+    option_strategy.plot(stock_price_range=(0, 60), strategy_name="Bull Spread Calls")
