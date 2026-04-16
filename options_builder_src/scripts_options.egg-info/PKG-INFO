@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: scripts_options
+Version: 0.1.0
+Summary: A Python module for building options.
+Author-email: T Motz <thomasmotz@gmx.net>
+License: MIT
+Description-Content-Type: text/markdown
